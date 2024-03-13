@@ -1,0 +1,28 @@
+ИЗМЕНЕННЫЙ ОТВЕТ
+
+CREAT TABLE tp_orders
+order_id INT NOT NULL PRIMARY KEY
+user_id INT NOT NULL 
+data DATETIME 
+basket_id INT NOT NULL 
+return BOOLEAN
+price FLOAT;
+
+CREAT TABLE tp_basket
+basket_id INT NOT NULL PRIMARY KEY
+user_id INT
+quantity INT
+order_id INT;
+
+
+CREAT TABLE tp_users
+user_id INT NOT NULL PRIMARY KEY
+user_name VARCHAR (100) NOT NULL
+email VARCHAR (100) NOT NULL
+order_id INT;
+
+CREAT TABLE tp_reviews
+review_id INT NOT NULL PRIMARY KEY
+order_id INT
+user_id INT
+reviews_text VARCHAR (500);
